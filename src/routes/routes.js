@@ -23,9 +23,9 @@ route.post('/enviar-email', async (req, res) => {
     },
   ];
 
-  for (let i = 0; i < 5; i++) {
+  
     await emailController.sendEmail(destinatario, assunto, conteudo, attachments);
-  }
+ 
   res.send('Email enviado com sucesso!');
 });
 
